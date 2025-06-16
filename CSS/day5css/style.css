@@ -1,0 +1,61 @@
+#head-text {
+  color: red;
+}
+
+.text {
+  color: green;
+}
+
+.bg {
+  background-color: yellow;
+}
+
+button {
+  color: green;
+  background-color: yellow;
+}
+
+#font {
+  font-family: fantasy;
+  font-size: 45px;
+}
+.weight {
+  font-weight: 900;
+  text-align: center;
+}
+
+.height {
+  background-color: rgb(70, 251, 76);
+  line-height: 125px;
+}
+.spacing {
+  letter-spacing: 56px;
+}
+.word {
+  word-spacing: 25px;
+  text-decoration: underline;
+  font-style: italic;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-indent: 25px;
+}
+ul{
+  list-style: lower-alpha ;
+  list-style: none;
+}
+
+*{
+  background-color: aqua;
+}
+/* 
+Text Properties : font-family, font-size, font-weight, text-align, line-height, letter-spacing, word-spacing, text-decoration, font-style, text- transform, text-indent, color, list-style */
+
+
+
+
+/* first priority always id 
+second priority always class
+third priroty tag name 
+ * fourth priorty universal tag
+*/
