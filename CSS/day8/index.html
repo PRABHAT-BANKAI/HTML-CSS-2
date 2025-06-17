@@ -27,6 +27,25 @@ Ex : Create Parallax Scrolling Effect
         /* background-size: contain; */
         background-attachment: fixed;
       }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: linear-gradient(red, green, yellow, blue);
+        background: radial-gradient(green, yellow, blue, black);
+        background: conic-gradient(pink, green, orange, blue);
+        background: linear-gradient(
+          59deg,
+          rgba(101, 219, 88, 1) 30%,
+          rgba(70, 82, 224, 1) 78%
+        );
+        background: radial-gradient(
+          circle,
+          rgba(31, 23, 179, 1) 0%,
+          rgba(121, 9, 71, 1) 78%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
     </style>
   </head>
   <body>
@@ -34,5 +53,7 @@ Ex : Create Parallax Scrolling Effect
     <div class="box1">hello world</div>
     <div class="box1">hello world</div>
     <div class="box1">hello world</div>
+
+    <div class="box2"></div>
   </body>
 </html>
