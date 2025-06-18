@@ -1,0 +1,83 @@
+<!-- 
+ Position: relative, absolute, z-index Transform
+Property : translate, rotate, scale, skew
+Ex : All Property Practice & Create Login Form With Using Position
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: aqua;
+      }
+      .main-container {
+        width: 500px;
+        height: 500px;
+        background-color: yellow;
+        position: relative;
+        z-index: -10;
+        top:200px;
+        left:50%;
+        translate: -50%;
+      }
+      .box1 {
+        background-color: rgb(255, 0, 0);
+
+        right: 50%;
+        /* left:100px;
+        top:100px; */
+        bottom: 50%;
+        translate: 50% 50%;
+       transform: rotate(147deg);
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+      }
+      .box2 {
+        background-color: blue;
+        right: 40%;
+        z-index: -5;
+        bottom: 40%;
+      }
+      .box3 {
+        background-color: rgb(0, 255, 68);
+        right: 30%;
+ transform: skew(127deg);
+        bottom: 30%;
+      }
+      .box4 {
+        background-color: rgb(255, 98, 0);
+        right: 20%;
+        z-index: -2;
+        bottom: 20%;
+        transform:scale(1.5) ;
+      }
+      .box5 {
+        background-color: rgb(255, 0, 76);
+        right: 10%;
+        z-index: -5;
+        bottom: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box1 box"></div>
+      <div class="box2 box"></div>
+      <div class="box3 box"></div>
+      <div class="box4 box"></div>
+      <div class="box5 box"></div>
+    </div>
+  </body>
+</html>
