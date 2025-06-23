@@ -1,0 +1,47 @@
+<!--
+Hover & Focus
+Transition Property : duration, timing-function, delay, property  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 200px;
+        height: 60px;
+        border: none;
+        font-size: 25px;
+        background-color: yellow;
+        border-radius: 10px;
+        transition: height 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+      }
+      button:hover {
+        background-color: red;
+        width: 300px;
+        height: 100px;
+        color: white;
+      }
+
+      input {
+        height: 50px;
+        width: 200px;
+        font-size: 25px;
+      }
+      input:focus {
+        border: 5px solid green;
+        outline-color: blue;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click me</button>
+    <br />
+    <input type="text" placeholder="enter your name" />
+  </body>
+</html>
