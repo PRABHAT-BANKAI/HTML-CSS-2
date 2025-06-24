@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       * {
         margin: 0;
@@ -17,7 +24,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:0 10%;
+        padding: 0 10%;
       }
       ul {
         list-style: none;
@@ -29,6 +36,49 @@
       ul {
         display: flex;
         gap: 15px;
+      }
+      .sec-main-1 {
+        font-size: 55px;
+        width: 1000px;
+        padding: 50px 10px;
+        background-color: grey;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 25px;
+      }
+      .sec-main-2 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+      }
+      .drop-down {
+        height: 50px;
+        width: 90px;
+      }
+      .card-container {
+        height: 400px;
+        width: 85%;
+        margin: auto;
+        border: 2px solid black;
+      }
+      .card {
+        width: 25%;
+        border: 1px solid green;
+        height: 100%;
+        position: relative;
+      }
+      .image-container {
+        width: 80%;
+        border: 1px solid red;
+        margin: auto;
+      }
+      .sale {
+        background-color: red;
+        position: absolute;
+        width: 50px;
+        top: 10px;
+        left: 10px;
       }
     </style>
   </head>
@@ -45,5 +95,35 @@
         <button>Get started</button>
       </nav>
     </header>
+    <section>
+      <div class="sec-main-1">
+        <p>Snacks & Munchies</p>
+      </div>
+      <div class="sec-main-2">
+        <div>
+          <p><b>26</b> Products found</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bars"></i>
+          <select class="drop-down" name="" id="">
+            <option value="">Show:10</option>
+          </select>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="sale">Sale</div>
+          <div class="image-container">
+            <img
+              width="100%"
+              src="https://www.haldirams.com/media/catalog/product/cache/71134970afb779eb7860339989626b7e/b/h/bhujiya_sev_1.jpg"
+              alt=""
+            />
+          </div>
+          <p>first</p>
+          <p>second</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
